@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lowongan Kerja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .navbar {
+            height: 70px;
+            /* Tambah tinggi navbar */
+            border-bottom: 2px solid #ddd;
+            /* Tambahkan border bawah */
+
+        }
+
+        .navbar-brand img {
+            height: 36px;
+            /* Sesuaikan tinggi logo */
+        }
+
+        .nav-link {
+            color: #000;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #ff6f00;
+            /* Warna hover oranye */
+        }
+
+        .btn-orange {
+            background-color: #ff8c32;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        .btn-orange:hover {
+            background-color: #e07a2d;
+        }
+
+        .job-card,
+        .company-card {
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .icon {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #f1f1f1;
+        }
+
+        .job-card h4 {
+            font-size: 1.2rem;
+        }
+
+        .job-card p,
+        .company-card p {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            font-size: 0.9rem;
+        }
+
+        .job-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .apply-btn {
+            margin-top: auto;
+        }
+
+        .the {
+            width: 100%;
+            /* Default: lebar penuh */
+            max-width: 100%;
+            /* Agar tetap responsif */
+        }
+
+        @media (min-width: 768px) {
+
+            /* Ketika mode md (≥768px) */
+            .the {
+                width: 750px;
+                /* Atur lebar menjadi 750px */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+            <!-- Logo dan Judul -->
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+                <img src="assets/logo-item.png" alt="Logo" class="img-fluid" style="max-height: 50px; background-size: cover;">
+            </a>
+
+            <!-- Hamburger Menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Pasang Lowongan Kerja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cari Lowongan Kerja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tips Loker</a></li>
+                </ul>
+
+                <!-- Registrasi & Masuk -->
+                <div class="d-flex align-items-center">
+                    <a href="#" class="text-dark text-decoration-none me-3">
+                        <i class="bi bi-question-circle"></i> Registrasi / Masuk
+                    </a>
+                    <a href="#" class="btn btn-orange px-3">Untuk Perusahaan</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row g-3">
+            <div class="col-lg-8">
+                <div class="border job-card p-3 shadow-sm bg-white">
+                    <h4 class="fw-bold">Internal Audit</h4>
+                    <p class="text-primary"><i class="fa fa-building"></i> PT. JBA INDONESIA <span
+                            class="text-muted ms-2"><i class="fa fa-clock"></i> 10 jam yang lalu</span></p>
+                    <div class="row row-cols-2 row-cols-md-3 g-2">
+                        <div>
+                            <p class="fw-bold"><i class="fa fa-map-marker-alt"></i> Lokasi</p>
+                            <p class="text-muted">Mojokerto</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold"><i class="fa fa-briefcase"></i> Tipe Pekerjaan</p>
+                            <p class="text-muted">Full Time</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold"><i class="fa fa-level-up-alt"></i> Level Pekerjaan</p>
+                            <p class="text-muted">Coordinator</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold"><i class="fa fa-tasks"></i> Fungsi</p>
+                            <p class="text-muted">Internal Audit</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold"><i class="fa fa-graduation-cap"></i> Pendidikan</p>
+                            <p class="text-muted">SMA / SMK / Sarjana, Diploma/D1/D2/D3</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold"><i class="fa fa-money-bill-wave"></i> Gaji</p>
+                            <p class="text-muted">Rp 4 – 8 Juta</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 mt-3 apply-btn">
+                        <button class="btn btn-outline-secondary"><i class="fa fa-share"></i></button>
+                        <a href="https://wa.me/6288230315212?text=Hai%20kak%20apakah%20lowongan%20pekerjaan%20ini%20masih%20ada"
+                            target="_blank" class="btn btn-primary flex-grow-1">Lamar Pekerjaan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="border company-card p-3 shadow-sm bg-white">
+                    <div class="text-center">
+                        <div class="icon mx-auto mb-2">
+                            <i class="fa fa-building text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold" style="font-size: 1rem;">PT. JBA INDONESIA</h5>
+                    </div>
+                    <p><i class="fa fa-map-marker-alt"></i> Mojokerto</p>
+                    <p><i class="fa fa-utensils"></i> Coordinator</p>
+                    <p><i class="fa fa-users"></i> 2 – 5 Karyawan</p>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic facere sed natus possimus similique ea, accusamus nemo ducimus autem nobis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <p>PT JBA Indonesia adalah perusahaan yang bergerak di bidang lelang kendaraan terbesar di Indonesia. Kami mencari seorang Internal Audit yang bertanggung jawab dalam memastikan kepatuhan operasional perusahaan terhadap standar dan regulasi yang berlaku.</p>
+    
+        <h4 class="mt-4 font-bold text-lg">Tanggung Jawab Pekerjaan :</h4>
+        <ul class="list-disc pl-5">
+            <li>Melakukan audit internal terhadap operasional perusahaan di cabang Mojokerto.</li>
+            <li>Meninjau dan mengevaluasi efektivitas sistem pengendalian internal.</li>
+            <li>Menganalisis data keuangan dan operasional untuk mengidentifikasi risiko atau ketidaksesuaian.</li>
+            <li>Membuat laporan hasil audit dan memberikan rekomendasi perbaikan.</li>
+            <li>Memastikan kepatuhan perusahaan terhadap kebijakan dan prosedur yang telah ditetapkan.</li>
+        </ul>
+    
+        <h4 class="mt-4 font-bold text-lg">Keahlian :</h4>
+        <p>Memiliki pemahaman mendalam tentang audit keuangan dan operasional.</p>
+        <p>Mampu menganalisis data dengan baik dan membuat laporan audit yang akurat.</p>
+        <p>Memiliki kemampuan komunikasi dan problem-solving yang baik.</p>
+    
+        <h4 class="mt-4 font-bold text-lg">Kualifikasi :</h4>
+        <ul class="list-disc pl-5">
+            <li>Pendidikan minimal S1 Akuntansi, Keuangan, atau bidang terkait.</li>
+            <li>Pengalaman minimal 2 tahun di bidang audit atau keuangan.</li>
+            <li>Menguasai Microsoft Office, terutama Excel dan PowerPoint.</li>
+            <li>Memiliki sertifikasi audit (CIA, CPA, atau sejenisnya) menjadi nilai tambah.</li>
+            <li>Bersedia melakukan perjalanan dinas jika diperlukan.</li>
+            <li>Penempatan di Mojokerto.</li>
+        </ul>
+    
+        <h4 class="mt-4 font-bold text-lg">Waktu Bekerja :</h4>
+        <p>Senin – Jumat : 08.30 - 17.30 WIB</p>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

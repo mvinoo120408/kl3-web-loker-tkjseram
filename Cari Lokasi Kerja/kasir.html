@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lowongan Kerja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .navbar {
+            height: 70px;
+            /* Tambah tinggi navbar */
+            border-bottom: 2px solid #ddd;
+            /* Tambahkan border bawah */
+
+        }
+
+        .navbar-brand img {
+            height: 36px;
+            /* Sesuaikan tinggi logo */
+        }
+
+        .nav-link {
+            color: #000;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #ff6f00;
+            /* Warna hover oranye */
+        }
+
+        .btn-orange {
+            background-color: #ff8c32;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        .btn-orange:hover {
+            background-color: #e07a2d;
+        }
+
+        .job-card,
+        .company-card {
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .icon {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #f1f1f1;
+        }
+
+        .job-card h4 {
+            font-size: 1.2rem;
+        }
+
+        .job-card p,
+        .company-card p {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            font-size: 0.9rem;
+        }
+
+        .job-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .apply-btn {
+            margin-top: auto;
+        }
+
+        .the {
+            width: 100%;
+            /* Default: lebar penuh */
+            max-width: 100%;
+            /* Agar tetap responsif */
+        }
+
+        @media (min-width: 768px) {
+
+            /* Ketika mode md (≥768px) */
+            .the {
+                width: 750px;
+                /* Atur lebar menjadi 750px */
+            }
+        }
+
+        .navbar {
+    height: 70px; /* Tambah tinggi navbar */
+    border-bottom: 2px solid #ddd; /* Tambahkan border bawah */
+}
+
+.navbar-brand img {
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ff6f00; /* Warna hover oranye */
+}
+
+.btn-orange {
+    background-color: #ff8c32;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.btn-orange:hover {
+    background-color: #e07a2d;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute; 
+        top: 70px; 
+        left: 0;
+        width: 100%; 
+        background-color: white; 
+        padding: 15px; 
+        border-bottom: 2px solid #ddd; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        z-index: 1000; 
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+            <!-- Logo dan Judul -->
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+                <img src="assets/logo-item.png" alt="Logo" class="img-fluid" style="max-height: 50px; background-size: cover;">
+            </a>
+    
+            <!-- Hamburger Menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="lowongan.html">Pasang Lowongan Kerja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cari-kerja.html">Cari Lowongan Kerja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tips-loker.html">Tips Loker</a></li>
+                </ul>
+    
+                <!-- Registrasi & Masuk -->
+                <div class="d-flex align-items-center">
+                    <a href="login.html" class="text-dark text-decoration-none me-3">
+                        <i class="bi bi-question-circle"></i> Registrasi / Masuk
+                    </a>
+                    <a href="coba-lowongan.html" class="btn btn-orange px-3">Untuk Perusahaan</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row g-3">
+            <div class="col-lg-8">
+                <div class="border job-card p-3 shadow-sm bg-white">
+                    <h4 class="fw-bold">Kasir</h4>
+                    <p class="text-primary"><i class="fa fa-building"></i> PT KASIR KARANGPILANG <span
+                            class="text-muted ms-2"><i class="fa fa-clock"></i> 26 menit yang lalu</span></p>
+                    <div class="row row-cols-2 row-cols-md-3 g-2">
+                        <div>
+                            <p class="fw-bold"><i class="fa fa-map-marker-alt"></i> Lokasi</p>
+                            <p class="text-muted">Surabaya</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold"><i class="fa fa-briefcase"></i> Tipe Pekerjaan</p>
+                            <p class="text-muted">Full Time</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold"><i class="fa fa-level-up-alt"></i> Level Pekerjaan</p>
+                            <p class="text-muted">Junior / Entery Level</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold"><i class="fa fa-tasks"></i> Fungsi</p>
+                            <p class="text-muted">Kasir</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold"><i class="fa fa-graduation-cap"></i> Pendidikan</p>
+                            <p class="text-muted">SMA / SMK / STM, Diploma/D1/D2/D3</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold"><i class="fa fa-money-bill-wave"></i> Gaji</p>
+                            <p class="text-muted">Rp 4 – 5 Juta</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 mt-3 apply-btn">
+                        <button class="btn btn-outline-secondary"><i class="fa fa-share"></i></button>
+                        <a href="https://wa.me/6288230315212?text=Hai%20kak%20apakah%20lowongan%20pekerjaan%20ini%20masih%20ada"
+                            target="_blank" class="btn btn-primary flex-grow-1">Lamar Pekerjaan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="border company-card p-3 shadow-sm bg-white">
+                    <div class="text-center">
+                        <div class="icon mx-auto mb-2">
+                            <i class="fa fa-building text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold" style="font-size: 1rem;">PT KASIR KARANGPILANG</h5>
+                    </div>
+                    <p><i class="fa fa-map-marker-alt"></i> Surabaya</p>
+                    <p><i class="fa fa-utensils"></i> Sang Pengatur Keuangan</p>
+                    <p><i class="fa fa-users"></i> 51 – 200 Karyawan</p>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic facere sed natus possimus similique ea, accusamus nemo ducimus autem nobis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <p class="the">PT KASIR KARANGPILANG Cbg Surabaya, Jawa Timur, salah satu Perusahaan populer di Surabaya. Saat ini sedang membutuhkan Kasir yang bertugas untuk mengelola transaksi pelanggan.
+        </p>
+
+        <h4 class="mt-4">Tanggung Jawab Pekerjaan :</h4>
+        <ul>
+            <li> Membuat laporan kas</li>
+            <li> Mengarsipkan data kas</li>
+            <li>Melakukan pembukuan uang masuk dan keluar setiap hari</li>
+        </ul>
+
+        <h4 class="mt-4">Keahlian :</h4>
+        <p>Manajemen operasional dan kepemimpinan tim</p>
+        <p>Kemampuan komunikasi dan problem-solving yang baik</p>
+        <h4 class="mt-4">Kualifikasi :</h4>
+        <ul>
+            <li> Pendidikan min Diploma Sederajat</li>
+            <li> Freshgraduate, berpengalaman</li>
+            <li>Domisili Surabaya</li>
+        </ul>
+
+        <h4 class="mt-4">Waktu Bekerja :</h4>
+        <p>09.00 - 17.00, senin - sabtu</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
